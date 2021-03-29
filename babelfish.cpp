@@ -14,6 +14,8 @@ int main() {
 	unordered_map<string, string> dict;
 	
 	while(!s.empty()){
+		
+		//stringstream is used to count the number of words, here line is replacing the work of cin.
 		stringstream line(s);
 		line >> english >> foreign;
 		dict[foreign] = english;
